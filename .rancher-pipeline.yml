@@ -17,4 +17,9 @@ stages:
   - applyYamlConfig:
       path: ./deployment.yaml
 timeout: 60
-notification: {}
+notification:
+  recipients:
+  - recipient: richa@india.nec.com
+    notifier: c-h8ztd:n-585k2
+  condition:
+  - Failed
